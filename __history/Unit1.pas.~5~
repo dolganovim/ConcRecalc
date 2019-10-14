@@ -58,7 +58,7 @@ begin
     end;
   finally
     JsonToSend.Free;
-    //f.Free;
+    f.Free;
     JsonF.Free;
   end;
 

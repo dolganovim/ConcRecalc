@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient,
-  IdHTTP, UlkJSON;
+  IdHTTP;
 
 type
   TForm1 = class(TForm)
@@ -30,16 +30,12 @@ var
   Json: string;
   sResponse: string;
   JsonToSend: TStringStream;
-  JsonF, f: TlkJSONobject;
 begin
-  JsonF:= TlkJSONobject.Create();
-  f:= TlkJSONobject.Create();
-  f.Add('Id','CH4');
-  f.Add('applicationPassword','1212332');
-  f.Add('accountId','312324');
-  f.Add('userId','535453');
-  JsonF.Add('sub', f);
-  Json :=TlkJSON.GenerateText(JsonF);
+  Json := '{"sub": {"Id": "' + 'CH4'+
+    '","applicationPassword": "' + '1212332' +
+    '","accountId": "' + '312324' +
+    '","userId": "' + '535453' +
+    '"}}';
 
   //memoRequest.Text := Json;
 
@@ -58,8 +54,6 @@ begin
     end;
   finally
     JsonToSend.Free;
-    //f.Free;
-    JsonF.Free;
   end;
 
   //memoResponse.Text := sResponse;
