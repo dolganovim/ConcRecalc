@@ -1,0 +1,15 @@
+unit UConcRecalc;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UlkJSON;
+  type
+    TRecalcConc = class
+      InputStr: TlkJSONObject;
+
+    end;
+implementation
+
+end.

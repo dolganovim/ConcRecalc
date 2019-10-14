@@ -1,0 +1,59 @@
+unit UConcRecalc;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UlkJSON;
+
+  type
+    TArrOfDouble = array of double;
+    TRecalcConc = class
+
+      private
+        _Mass: TArrOfDouble;
+        function ToMass(InputStr: TlkJSONObject): TArrOfDouble;
+        function ToOutTypeConc(InputStr: TlkJSONObject): TlkJSONObject;
+
+      public
+        function GetOutputJSON(InputStr: TlkJSONObject): TlkJSONObject;
+      (*
+        описание вход€щего JSON
+        { InputComp: [1,2,3,4,5,6],    //id компонента в базе
+          InputConc: [1,1,1,1,1,1],    // концентрации
+          InputTypeConc: "tcMoln",     // тип вход€щих концентраций  tcMoln, tcMass, tcMolar, tcVol
+          InputTypeConcSize: "%",     // тип размерности вход€щих концентраций  %, dol
+          OutputTypeConc: "tcMass",     // тип выход€щих концентраций
+          OutputTypeConcSize: "%",     // тип размерности вход€щих концентраций  %, dol
+
+        }
+
+        описание выход€щего JSON
+        { OutputComp: [1,2,3,4,5,6],    //id компонента в базе
+          OutputConc: [1,1,1,1,1,1],    // концентрации
+          OutputTypeConc: "tcMass",     // тип выход€щих концентраций
+          OutputTypeConcSize: "%",     // тип размерности вход€щих концентраций  %, dol
+        }
+      *)
+
+    end;
+implementation
+
+{ TRecalcConc }
+
+function TRecalcConc.GetOutputJSON(InputStr: TlkJSONObject): TlkJSONObject;
+begin
+  //
+end;
+
+function TRecalcConc.ToMass(InputStr: TlkJSONObject): TArrOfDouble;
+begin
+  //
+end;
+
+function TRecalcConc.ToOutTypeConc(InputStr: TlkJSONObject): TlkJSONObject;
+begin
+  //
+end;
+
+end.
