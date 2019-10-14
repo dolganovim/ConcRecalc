@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019.10.14 10:51:46.674.pas,C:\Users\dolganovim\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\dolganovim\Desktop\Программа\Unit1.pas</Transaction>
+    <Transaction>2019.10.14 10:51:46.674.dfm,C:\Users\dolganovim\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\dolganovim\Desktop\Программа\Unit1.dfm</Transaction>
+    <Transaction>2019.10.14 10:51:47.391.dproj,C:\Users\dolganovim\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\dolganovim\Desktop\Программа\Project1.dproj</Transaction>
+    <Transaction>2019.10.14 10:55:22.453.pas,C:\Users\dolganovim\Desktop\Программа\Unit2.pas=C:\Users\dolganovim\Desktop\Программа\UConcRecalc.pas</Transaction>
+  </Transactions>
+</BorlandProject>
