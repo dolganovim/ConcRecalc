@@ -56,7 +56,6 @@ begin
       on E: Exception do
         ShowMessage('Error on request: '#13#10 + e.Message);
     end;
-    delete(sResponse, 1, pos('{',sResponse)-1);
     js := TlkJSON.ParseText(sResponse) as TlkJSONobject;
     showmessage(js.getString('RackettZraValue'));
   finally
